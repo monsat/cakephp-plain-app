@@ -1,0 +1,7 @@
+#tmp/**/*
+#webroot/.htaccess
+
+.settings
+.project
+.cache
+
