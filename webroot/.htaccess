@@ -5,22 +5,3 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
 </IfModule>
-
-php_value default_charset "UTF-8"
-
-
-
-# added for Develop
-## user: a
-## password: a
-AuthUserFile /virtual/implant/ht/test/.htpasswd
-AuthGroupFile /dev/null
-AuthName "Please enter username 'a' and password 'a'"
-AuthType Basic
-
-require valid-user
-Satisfy any
-
-order deny,allow
-allow from 61.192.220.151
-deny from all
